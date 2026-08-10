@@ -30,36 +30,68 @@
             return  "$nomeReal, atualizado com sucesso!";
         }// fim do nome Real
 
-         public function atualizarEndereco(string $endereco):string
+         public function atualizarNickName(string $nickName):string
         {
-        
-            $this->cliente->endereco = $endereco;
-            return "$endereco, atualizado com sucesso!";
-        }//fim do endereço
+            $this->usuario->nickName = $nickName;
+            return "$nickName, atualizado com sucesso!";
+        }//fim do nickName
 
-          public function atualizarTelefone(string $telefone):string
+          public function atualizarDtDeNascimento(string $dtDeNascimento):string
         {
-            $this->cliente->telefone = $telefone;
-            return "$telefone, atualizado com sucesso!";  
-        }//fim do telefone
+            $this->usuario->dtDeNascimento = $dtDeNascimento;
+            return "$dtDeNascimento, atualizada com sucesso!";  
+        }//fim do data de nascimento
 
+           public function atualizarNacionalidade(string $nacionalidade):string
+        {
+            $this->usuario->nacionalidade = $nacionalidade;
+            return "$nacionalidade, atualizada com sucesso!";  
+        }//fim da nacionalidade
+
+         public function atualizarLogin(string $login):string
+        {
+            $this->usuario->login = $login;
+            return "$login, atualizado com sucesso!";  
+        }//fim do login
+
+         public function atualizarSenha(string $senha):string
+        {
+            $this->usuario->senha = $senha;
+            return "$senha, atualizada com sucesso!";  
+        }//fim da senha
         
+        public function atualizarTipo(bool $tipo):string
+        {
+            $this->usuario->tipo = $tipo;
+            return "$tipo, atualizada com sucesso!";  
+        }//fim do tipo
+
+             public function atualizarEquipe(int $equipe):string
+        {
+            $this->usuario->equipe = $equipe;
+            return "$equipe, atualizada com sucesso!";  
+        }//fim da equipe
+
           public function atualizarData(string $data):string
         {
-                $this->cliente->data = $data;
-                return "Data De Nascimento, atualizado com sucesso!";
+                $this->usuario->data = $data;
+                return "Data, atualizada com sucesso!";
         }//fim do Data
 
         public function excluir():int
         {
-            $cod = $this->cliente->codigo; 
-            $this->cliente->codigo            = 0;
-            $this->cliente->nome              = "";
-            $this->cliente->telefone          = "";
-            $this->cliente->endereco          = "";
-            $this->cliente->dataDeNascimento  = "";
+            $cod = $this->usuario->codigo; 
+            $this->usuario->codigo                  = 0;
+            $this->usuario->nomeReal                = "";
+            $this->usuario->nickName                = "";
+            $this->usuario->dtDeNascimento          = "";
+            $this->usuario->nacionalidade           = "";
+            $this->usuario->login                   = "";
+            $this->usuario->senha                   = "";
+            $this->usuario->tipo                    = "";
+            $this->usuario->equipe                  = "";
             return 1;
         }// fim do excluir
 
-    }//fim da classe Control
+    }//fim da classe Control usuario
 ?>

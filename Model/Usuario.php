@@ -10,11 +10,11 @@
         private string      $nacionalidade;
         private string      $login;
         private string      $senha;
-        private boolean     $tipo;
+        private bool        $tipo;
         private int      $equipe_codigo;
 
         //primeira coisa: Criar um Construtor
-        public function __construct(int $codigo, string $nomeReal, string $nickName, string $dtDeNascimeto, string $nacionalidade, string $login, string $senha, boolean $tipo, int $equipe_codigo)
+        public function __construct(int $codigo, string $nomeReal, string $nickName, string $dtDeNascimeto, string $nacionalidade, string $login, string $senha, bool $tipo, int $equipe_codigo)
         {
             $this->codigo           = $codigo;
             $this->nomeReal         = $nomeReal;

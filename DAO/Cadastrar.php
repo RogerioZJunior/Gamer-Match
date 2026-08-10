@@ -5,7 +5,7 @@
 
     class cadastrar
     {
-        public function cadastrarUsuario(Conexao $conexao, string $nomeReal, string $nickName, string $dtNascimento, string $nacionalidade, string $login, string $senha, boolean $tipo, int $equipe_codigo)
+        public function cadastrarUsuario(Conexao $conexao, string $nomeReal, string $nickName, string $dtNascimento, string $nacionalidade, string $login, string $senha, bool $tipo, int $equipe_codigo)
         {
             try
             {
