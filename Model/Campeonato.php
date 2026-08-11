@@ -7,11 +7,11 @@
         private string      $nomeDoCampeonato;
         private string      $dataInicio;
         private string      $dataFim;
-        private decimal     $premio;
-        private int      $jogo_codigo;
+        private float     $premio;
+        private int         $jogo_codigo;
 
         //primeira coisa: Criar um Construtor
-        public function __construct(int $codigo, string $nomeDoCampeonato, string $dataInicio, string $dataFim, decimal $premio, int $jogo_codigo)
+        public function __construct(int $codigo, string $nomeDoCampeonato, string $dataInicio, string $dataFim, float $premio, int $jogo_codigo)
         {
             $this->codigo            = $codigo;
             $this->nomeDoCampeonato  = $nomeDoCampeonato;

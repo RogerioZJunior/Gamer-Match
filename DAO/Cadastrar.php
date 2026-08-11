@@ -29,13 +29,13 @@
 
         }//fim do cadastrar usuario
 
-        public function cadastrarJogo(Conexao $conexao, string $nome, string $deselvolvedora, string $genero,)
+        public function cadastrarJogo(Conexao $conexao, string $nome, string $desenvolvedora, string $genero,)
         {
             try
             {
                 $conn    = $conexao->conectar();//Abre conexão
-                $sql     = "insert into jogo(codigo, nome, deselvolvedora, genero)
-                            values('','$nome','$deselvolvedora','$genero')";
+                $sql     = "insert into jogo(codigo, nome, desenvolvedora, genero)
+                            values('','$nome','$desenvolvedora','$genero')";
                 $result  = mysqli_query($conn,$sql); // executando o comando criando
                 //fechar comando
                 mysqli_close($conn);
@@ -53,7 +53,7 @@
 
         }//fim do cadastrar jogo
 
-         public function cadastrarCampeonato(Conexao $conexao, string $nomeDoCampeonato, string $dataInicio, string $DataFim, decimal $premio, int $jogo_codigo)
+         public function cadastrarCampeonato(Conexao $conexao, string $nomeDoCampeonato, string  $dataInicio, string  $dataFim, float $premio, int $jogo_codigo)
         {
             try
             {
@@ -78,7 +78,7 @@
         }//fim do cadastrar campenato
 
         
-         public function cadastrarPartida(Conexao $conexao, string $resultado, string $statuss, string $campeonato_Codigio)
+         public function cadastrarPartida(Conexao $conexao, string $resultado, string $statuss, int $campeonato_codigo)
         {
             try
             {

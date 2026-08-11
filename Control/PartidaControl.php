@@ -31,7 +31,7 @@
             return "$statuss, atualizado com sucesso!";
         }//fim do status
 
-          public function atualizarCampeonato_codigo(string $campeonato_codigo):string
+          public function atualizarCampeonato_codigo(int $campeonato_codigo):string
         {
             $this->partida->campeonato_codigo = $campeonato_codigo;
             return "$campeonato_codigo, atualizado com sucesso!";  

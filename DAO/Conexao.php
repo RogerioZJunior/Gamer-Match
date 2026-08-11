@@ -12,7 +12,7 @@
                 //validação
                 if($conn)
                 {
-                    echo "<br>Conectado com sucesso!";
+                    echo "<br>Ação efetuada com sucesso!";
                     return $conn;
                 }
                 echo "Algo deu errado";

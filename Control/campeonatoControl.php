@@ -27,19 +27,19 @@
             return  "$nomeDoCampenato, atualizado com sucesso!";
         }// fim do nome do campeonato
 
-         public function atualizarDataInicio(string $dataInicio):string
+         public function atualizarDataInicio(string  $dataInicio):string
         {
             $this->campeonato->dataInicio = $dataInicio;
             return "$dataInicio, atualizada com sucesso!";
         }//fim da data de inicio
 
-          public function atualizarDataFim(string $dataFim):string
+          public function atualizarDataFim(string  $dataFim):string
         {
             $this->jogo->dataFim = $dataFim;
             return "$dataFim, atualizado com sucesso!";  
         }//fim da data de fim
 
-        public function atualizarPremio(string $premio):string
+        public function atualizarPremio(float $premio):string
         {
             $this->Campeonato->premio = $premio;
             return "$premio, atualizado com sucesso!";  
