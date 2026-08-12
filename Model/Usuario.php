@@ -11,7 +11,7 @@
         private string      $login;
         private string      $senha;
         private bool        $tipo;
-        private int      $equipe_codigo;
+        private int         $equipe_codigo;
 
         //primeira coisa: Criar um Construtor
         public function __construct(int $codigo, string $nomeReal, string $nickName, string $dtDeNascimeto, string $nacionalidade, string $login, string $senha, bool $tipo, int $equipe_codigo)

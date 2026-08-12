@@ -22,7 +22,7 @@
                                '<br>Nick Name: '.$dados['nickName']. 
                                '<br>Data de Nascimento: '.$dados['dtDeNascimento']. 
                                '<br>Nacionalidade: '.$dados['nacionalidade'].
-                               '<br>Tipo de Usuário: '.$dados['Tipo'].
+                               '<br>Tipo de Usuário: '.$dados['tipo'].
                                '<br>Equipe: '.$dados['equipe_codigo'];
                     }
                 }
@@ -49,7 +49,7 @@
                         return '<br>Código: '.$dados['codigo'].
                                '<br>Nome da Equipe: '.$dados['nome'].
                                '<br>Abreviação: '.$dados['abreviacao']. 
-                               '<br>País: '.$dados['dtDeNascimento']; 
+                               '<br>País: '.$dados['pais']; 
                     }
                 }
             }

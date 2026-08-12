@@ -54,18 +54,34 @@
       </div>
     </nav>
   </header>
+
+    
  
 
 
-    <h1> Página Inicial </h1>
-    <a href="view\cadastrar.php"><button>Cadastrar Usuario</button></a>
-    <a href="view\Equipe.php"><button>Cadastrar Equipe</button></a>
-    <a href="view\Jogo.php"><button>Cadastrar Jogo</button></a>
-    <a href="view\Partida.php"><button>Cadastrar Partida</button></a>
-    <a href="view\Campeonato.php"><button>Cadastrar Campeonato</button></a> <br><br>
+    <h1> Menu Administrativo </h1>
+    <a href="view\CadastrarUsuario.php"><button>Cadastrar Usuario</button></a>
+    <a href="view\CadastrarEquipe.php"><button>Cadastrar Equipe</button></a>
+    <a href="view\CadastrarJogo.php"><button>Cadastrar Jogo</button></a>
+    <a href="view\CadastrarPartida.php"><button>Cadastrar Partida</button></a>
+    <a href="view\CadastrarCampeonato.php"><button>Cadastrar Campeonato</button></a> <br><br>
 
-    <a href="view\consultar.php"><button>Consultar</button></a>
-    <a href="view\atualizar.php"><button>Atualizar</button></a>
-    <a href="view\excluir.php"><button>Excluir</button></a>
+    <a href="view\consultarUsuario.php"><button>Consultar Usuario</button></a>
+    <a href="view\consultarEquipe.php"><button>Consultar Equipe</button></a>
+    <a href="view\consultarJogo.php"><button>Consultar Jogo</button></a>
+    <a href="view\consultarPartida.php"><button>Consultar Partida</button></a>
+    <a href="view\consultarCampeonato.php"><button>Consultar Campeonato</button></a> <br><br>
+
+    <a href="view\atualizarUsuario.php"><button>Atualizar Usuario</button></a>
+    <a href="view\atualizarEquipe.php"><button>Atualizar Equipe</button></a>
+    <a href="view\atualizarJogo.php"><button>Atualizar Jogo</button></a>
+    <a href="view\atualizarPartida.php"><button>Atualizar Partida</button></a>
+    <a href="view\atualizarCampeonato.php"><button>Atualizar Campeonato</button></a>  <br><br>
+
+    <a href="view\Excluir.php"><button>Excluir</button></a>
+    <a href="view\ExcluirEquipe.php"><button>Excluir Equipe</button></a>
+    <a href="view\ExcluirJogo.php"><button>excluir Jogo</button></a>
+    <a href="view\Excluir.php"><button>Excluir</button></a>
+    <a href="view\ExcluirCampeonato.php"><button>Excluir Campeonato</button></a>   <br><br>
 </body>
 </html>

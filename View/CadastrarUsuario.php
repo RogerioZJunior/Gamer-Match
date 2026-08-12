@@ -32,18 +32,20 @@
         <input type="text" name="nickName" id="nickName"/><br><br>
 
         <label>Data de Nascimento: </label>
-        <input type="text" name="dtDeNascimento" id="dtDeNascimento"/><br><br>
+        <input type="date" name="dtDeNascimento" id="dtDeNascimento"/><br><br>
 
         <label>Nacionalidade: </label>
         <input type="text" name="nacionalidade" id="nacionalidade"/><br><br>
 
-        <label>Equipe: </label>
-        <select name="equipe_codigo">
-            <option value="1">Equipe 1</option>
-            <option value="2">Equipe 2</option>
-            <option value="3">Equipe 3</option>
-        </select>
-        <input type="int" name="equipe" id="equipe"/><br><br>
+        <label>Equipe:</label>
+
+        <select name="equipe_codigo" id="equipe_codigo" required>
+
+        <option value="">Selecione uma opção</option>
+        <option value="3">Team Liquid</option>
+        <option value="4">Teste</option>
+
+         </select>              <br><br>
 
         <label>Login: </label>
         <input type="text" name="login" id="login"/><br><br>
@@ -51,8 +53,15 @@
         <label>Senha: </label>
         <input type="text" name="senha" id="senha"/><br><br>
         
-        <label>tipo: </label>
-        <input type="boll" name="tipo" id="tipo"/><br><br>
+         <label>Tipo:</label>
+
+        <select name="tipo" id="tipo" required>
+
+        <option value="">Selecione uma opção</option>
+        <option value="0">Usuario Comum</option>
+        <option value="1">Administrador</option>
+
+         </select>  <br><br>
 
         
 
@@ -70,9 +79,9 @@
                     $login            = $_POST['login'];
                     $senha            = $_POST['senha'];
                     $tipo             = $_POST['tipo'];
-                    $equipe           = $_POST['equipe'];
+                    $equipe_codigo    = $_POST['equipe_codigo'];
                     
-                    $mensagem = $inserir->cadastrarUsuario($conexao, $nomeReal, $nickName, $dtDeNascimento, $nacionalidade, $login, $senha, $tipo,$equipe);
+                    $mensagem = $inserir->cadastrarUsuario($conexao, $nomeReal, $nickName, $dtDeNascimento, $nacionalidade, $login, $senha, $tipo,$equipe_codigo);
                 }
                
             ?> 

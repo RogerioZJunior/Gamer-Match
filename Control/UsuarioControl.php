@@ -66,10 +66,10 @@
             return "$tipo, atualizada com sucesso!";  
         }//fim do tipo
 
-             public function atualizarEquipe(int $equipe):string
+             public function atualizarEquipe_codigo(int $equipe_codigo):string
         {
-            $this->usuario->equipe = $equipe;
-            return "$equipe, atualizada com sucesso!";  
+            $this->usuario->equipe_codigo = $equipe_codigo;
+            return "$equipe_codigo, atualizada com sucesso!";  
         }//fim da equipe
 
           public function atualizarData(string $data):string
@@ -89,7 +89,7 @@
             $this->usuario->login                   = "";
             $this->usuario->senha                   = "";
             $this->usuario->tipo                    = "";
-            $this->usuario->equipe                  = "";
+            $this->usuario->equipe_codigo           = "";
             return 1;
         }// fim do excluir
 

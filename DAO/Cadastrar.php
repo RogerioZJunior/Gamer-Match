@@ -5,13 +5,13 @@
 
     class cadastrar
     {
-        public function cadastrarUsuario(Conexao $conexao, string $nomeReal, string $nickName, string $dtNascimento, string $nacionalidade, string $login, string $senha, bool $tipo, int $equipe_codigo)
+        public function cadastrarUsuario(Conexao $conexao, string $nomeReal, string $nickName, string $dtDeNascimento, string $nacionalidade, string $login, string $senha, bool $tipo, int $equipe_codigo)
         {
             try
             {
                 $conn    = $conexao->conectar();//Abre conexão
                 $sql     = "insert into usuario(codigo, nomeReal, nickName, dtDeNascimento, nacionalidade, login, senha, tipo, equipe_codigo)
-                            values('','$nomeReal','$nickName','$dtDeNascimento','$login','$senha','$tipo','$equipe_codigo')";
+                            values('','$nomeReal','$nickName','$dtDeNascimento','$nacionalidade','$login','$senha','$tipo','$equipe_codigo')";
                 $result  = mysqli_query($conn,$sql); // executando o comando criando
                 //fechar comando
                 mysqli_close($conn);
